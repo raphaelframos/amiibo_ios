@@ -28,6 +28,14 @@ struct Amiibo : Codable {
         if let image = json["image"].string {
             self.image = image
         }
+        
+        if let gameSeries = json["gameSeries"].string {
+            self.gameSeries = gameSeries
+        }
+        
+        if let amiiboSeries = json["amiiboSeries"].string {
+            self.amiiboSeries = amiiboSeries
+        }
     }
     
 }

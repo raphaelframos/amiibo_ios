@@ -31,19 +31,28 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVf-d1-cLF">
-                                            <rect key="frame" x="102" y="15" width="269" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="102" y="15" width="269" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-SP-ZNy">
-                                            <rect key="frame" x="102" y="40" width="269" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="102" y="39.5" width="269" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-78-WoW">
+                                            <rect key="frame" x="102" y="65.5" width="37.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="tmb-78-WoW" firstAttribute="top" secondItem="jHp-SP-ZNy" secondAttribute="bottom" constant="8" symbolic="YES" id="2Fd-bb-xSn"/>
+                                        <constraint firstItem="tmb-78-WoW" firstAttribute="leading" secondItem="tzd-C0-6Og" secondAttribute="trailing" constant="8" symbolic="YES" id="AYo-f4-sA4"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tmb-78-WoW" secondAttribute="trailing" constant="20" symbolic="YES" id="HsL-v1-IUy"/>
                                         <constraint firstItem="jHp-SP-ZNy" firstAttribute="leading" secondItem="tzd-C0-6Og" secondAttribute="trailing" constant="8" symbolic="YES" id="NUh-qP-cZN"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="MVf-d1-cLF" secondAttribute="trailing" constant="4" id="Np1-hc-zYO"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="jHp-SP-ZNy" secondAttribute="trailing" constant="4" id="PVr-v3-Kv5"/>
@@ -57,6 +66,8 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageViewAvatar" destination="tzd-C0-6Og" id="CWU-16-u8u"/>
+                                    <outlet property="labelCharacter" destination="jHp-SP-ZNy" id="l5v-3L-JpX"/>
+                                    <outlet property="labelGameSeries" destination="tmb-78-WoW" id="WdJ-Js-B0V"/>
                                     <outlet property="labelName" destination="MVf-d1-cLF" id="nWK-fF-ykB"/>
                                 </connections>
                             </tableViewCell>

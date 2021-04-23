@@ -16,8 +16,11 @@ class FeedTableViewController: UITableViewController {
 
         DataService().fetchAmiibos { result in
             self.listAmiibos = result
+            self.listAmiibos.sort {($0.name < $1.name)}
             self.tableView.reloadData()
         }
+        
+        title = "Amiibos"
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
