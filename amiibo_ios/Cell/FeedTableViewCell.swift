@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedTableViewCell: UITableViewCell {
 
@@ -15,6 +16,10 @@ class FeedTableViewCell: UITableViewCell {
     
     func bind(amiibo: Amiibo){
         labelName.text = amiibo.name
+        if let url = URL(string: amiibo.image){
+            imageViewAvatar.kf.setImage(with: url)
+        }
+        
     }
     
 }

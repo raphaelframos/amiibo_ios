@@ -24,6 +24,10 @@ struct Amiibo : Codable {
         if let name = json["name"].string {
             self.name = name
         }
+        
+        if let image = json["image"].string {
+            self.image = image
+        }
     }
     
 }
