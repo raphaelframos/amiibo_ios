@@ -7,6 +7,8 @@ target 'amiibo_ios' do
 
   # Pods for amiibo_ios
 
-pod 'Alamofire', '~> 5.2'
+    pod 'Alamofire', '~> 5.2'
+    pod 'SwiftyJSON', '~> 4.0'
+
 
 end

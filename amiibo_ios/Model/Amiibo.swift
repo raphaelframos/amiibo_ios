@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct Amiibo {
+struct Amiibo : Codable {
     
     var amiiboSeries = ""
     var character = ""
@@ -17,5 +18,12 @@ struct Amiibo {
     var name = ""
     var tail = ""
     var type = ""
+    var release = Dictionary<String, String>()
+    
+    init(json: JSON) {
+        if let name = json["name"].string {
+            self.name = name
+        }
+    }
     
 }

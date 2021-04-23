@@ -13,4 +13,8 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var imageViewAvatar: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     
+    func bind(amiibo: Amiibo){
+        labelName.text = amiibo.name
+    }
+    
 }
